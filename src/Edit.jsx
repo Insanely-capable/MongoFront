@@ -13,7 +13,7 @@ function Edit() {
 
     const obj = { name, email, message, id: idToEdit };
 
-    fetch("http://localhost:4000/updateData", {
+    fetch("https://mongoback.onrender.com/updateData", {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -32,7 +32,7 @@ function Edit() {
 
   useEffect(() => {
     if (idToEdit) {
-      fetch("http://localhost:4000/getDataById/" + idToEdit)
+      fetch("https://mongoback.onrender.com/getDataById/" + idToEdit)
         .then((response) => response.json())
         .then((result) => {
           setName(result.name);

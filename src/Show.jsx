@@ -8,7 +8,7 @@ function Show() {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch("http://localhost:4000/showData");
+      const response = await fetch("https://mongoback.onrender.com/showData");
       const result = await response.json();
       setData(result);
     }
@@ -16,7 +16,7 @@ function Show() {
   }, []);
 
   function handleDelete(e, id) {
-    fetch("http://localhost:4000/deleteData", {
+    fetch("https://mongoback.onrender.com/deleteData", {
       method: "DELETE",
       headers: {
         "content-type": "application/json",

@@ -11,7 +11,7 @@ function AddMessage() {
 
     const obj = { name, email, message };
 
-    fetch("http://localhost:4000/saveData", {
+    fetch("https://mongoback.onrender.com/saveData", {
       method: "POST",
       headers: {
         "content-type": "application/json",

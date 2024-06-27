@@ -11,7 +11,7 @@ function App() {
   }, []);
 
   const fetchBlogs = (author = "") => {
-    let url = `http://localhost:4000/getBlogs`;
+    let url = `https://mongoback.onrender.com/getBlogs`;
     if (author) {
       url += `?author=${encodeURIComponent(author)}`;
     }
