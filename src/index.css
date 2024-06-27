@@ -1,0 +1,64 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap"); */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: Noto Sans, sans-serif;
+  font-weight: 400; */
+}
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+} */
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: none;
+}
+a:hover {
+  color: #535bf2;
+}
+a svg{
+  display: inline-block;
+}
+#root {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  width: 100%;
+  box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1rem;
+}
+header ul {
+  display: flex;
+  list-style: none;
+}
+header ul a {
+  margin: 0 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+main {
+  padding: 1rem 3rem;
+}
+.section-heading {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+th,
+td {
+  padding: 0.25rem;
+  text-align: center;
+  border: 1px solid hotpink;
+}
