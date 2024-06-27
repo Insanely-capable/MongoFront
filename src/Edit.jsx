@@ -32,7 +32,7 @@ function Edit() {
 
   useEffect(() => {
     if (idToEdit) {
-      fetch("https://mongoback.onrender.com/getDataById/" + idToEdit)
+      fetch("https://mongoback.onrender.comˀˀˀ/getDataById/" + idToEdit)
         .then((response) => response.json())
         .then((result) => {
           setName(result.name);

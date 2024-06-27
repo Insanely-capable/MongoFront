@@ -26,7 +26,7 @@ function Show() {
       .then((response) => response.json())
       .then((result) => {
         if (result === "Data Deleted")
-          window.location.href = "http://localhost:5173/show";
+          window.location.href = "https://mongofront.onrender.com/show";
       });
   }
 
